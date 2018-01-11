@@ -1,0 +1,35 @@
+
+
+html{
+  height:100%;
+}
+
+body{
+  height:100%;
+  background-image: url('./images/planbk.jpg');
+  background-position: 0px 0px;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+
+  margin-top:0px;
+    margin-bottom:0px;
+}
+.text-block{
+  position: absolute;
+  text-align: center;
+  top: 19%;
+  left: 25%;
+  right: 20%;
+
+}
+
+.text-font{
+  font-family: 'Oxygen', sans-serif;
+  font-size:50px;
+}
+
+.top-bar{
+  background-color:rgba(0, 0, 0, 0);
+}
