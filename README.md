@@ -1,9 +1,12 @@
 This project is a sample starter app with
-1.Home page with background image.
-2.Login page with login call to Amazon cognito identity (active directory on aws) using amazon-cognito-identity-js
-3.Logout page with session management.
-4.404 page, "Sorry Not Found page".
-5.Navbar(Brand, Logn, Logout, signup, Features, Contactus );
+<ul>
+
+<li> Home page with background image.</li>
+<li>Login page with login call to Amazon cognito identity (active directory on aws) using amazon-cognito-identity-js</li>
+<li>Logout page with session management.</li>
+<li>404 page, "Sorry Not Found page".</li>
+<li>Navbar(Brand, Logn, Logout, signup, Features, Contactus )</li>
+</ul>
 
 This has react, node, express, react-dom, react-router-dom, react-bootstrap, awslib, babel, webpack.
 
