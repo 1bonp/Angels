@@ -1,0 +1,31 @@
+.NewBoard form {
+  padding:15px;
+}
+
+.NewBoard form text {
+  height: 100px;
+  width:200px;
+  font-size: 24px;
+  padding-right:10px;
+}
+
+.NewBoard .form-group {
+  padding-right:10px;
+}
+
+.list-group {
+  padding:10px;
+}
+
+.NewBoard .boards h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding-left: 10px;
+  overflow: hidden;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.NewBoard .boards p {
+  color: #666;
+}

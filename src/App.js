@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
-import { Image, Nav, Navbar, NavItem} from "react-bootstrap";
+import { Image, Nav, NavDropdown, MenuItem, Navbar, NavItem} from "react-bootstrap";
 import "./App.css";
 import Routes from "./Routes";
 import RouteNavItem from "./components/RouteNavItem";
@@ -49,36 +49,40 @@ class App extends Component {
   return (
     !this.state.isAuthenticating &&
     <div>
+
     <Navbar fluid collapseOnSelect className="top-bar">
          <Navbar.Header>
            <Navbar.Brand >
-             <Link to="/"></Link>
+             <Link to="/">Angel planners</Link>
            </Navbar.Brand>
            <Navbar.Toggle />
          </Navbar.Header>
-         <Navbar.Collapse>
+    <Navbar.Collapse>
            <Nav pullRight>
            {this.state.isAuthenticated
-             ? <NavItem onClick={this.handleLogout}>Logout</NavItem>
+             ? [<NavItem key={0} onClick={this.handleLogout}>Logout</NavItem>,
+               <RouteNavItem key={5} href="/boards">WhiteBoards</RouteNavItem>,
+            // <RouteNavItem key={6} href="/boats/new">Same-Boats</RouteNavItem>,
+           <RouteNavItem key={8} href="/plans">ActionPlans</RouteNavItem>]
              : [
-               <RouteNavItem key={1} href="/signup">
-          Signup
-        </RouteNavItem>,
-        <RouteNavItem key={2} href="/Login">
+               <RouteNavItem key={2} href="/Login">
           Login
-        </RouteNavItem>]},
-        <RouteNavItem key={3} href="/features">Feautures</RouteNavItem>,
-        <RouteNavItem key={4} href="/contactus">ContactUs</RouteNavItem>
+        </RouteNavItem>,
+        <RouteNavItem key={1} href="/Signup">
+          Signup
+        </RouteNavItem>
+        ]}
+
+        <RouteNavItem key={3} href="/Features">Features</RouteNavItem>
+        <RouteNavItem key={7} href="/contactus">Contact-us</RouteNavItem>
 
 
            </Nav>
-         </Navbar.Collapse>
-       </Navbar>
-      <div className="text-block">
-      <div className="text-font">
+           </Navbar.Collapse>
 
-      </div>
-    </div>
+       </Navbar>
+
+
      <Routes childProps={childProps} />
     </div>
   );

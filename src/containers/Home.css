@@ -1,8 +1,7 @@
 .Home .lander {
   position:absolute;
-  top:45%;
-  left:50%;
-
+  height:80%;
+width:100%;
 }
 
 .Home .lander h1 {
@@ -19,10 +18,72 @@
 
 }
 
-.Home .container {
-
+.Home {
     flex: 1;
-    width: null;
-    height: null;
+    width: 100%;
+    height: 100%;
+  }
+
+  .canvas{
+    position:absolute;
+    width:100%;
+    height:100%;
 
   }
+.board{
+  position:absolute;
+  top:5%;
+  left:10%;
+}
+  .note {
+    width: 160px;
+    height: 160px;
+    z-index: 101;
+    border:5px;
+    border-color:gold;
+    margin:5px;
+}
+
+.sticky {
+  width: 100%;
+  height: 100%;
+  draggable:true;
+  transform: rotate(0.5deg);
+}
+.note1 {
+  float:left;
+}
+.sticky1 {
+  background-color: #8cb5f7;
+}
+
+.note2 {
+  float:left;
+}
+.sticky2 {
+  background-color: #97c48d;
+}
+
+.note3 {
+  float:left;
+}
+.sticky3 {
+  background-color: #CBFAFA;
+}
+
+.note4 {
+  float:left;
+}
+.sticky4 {
+  background-color: #edf2ba;
+}
+
+ .pin {
+width:20px;
+height:20px;
+}
+.webImage {
+  float:none;
+  width:160px;
+  height:100px;
+}

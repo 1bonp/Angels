@@ -6,30 +6,72 @@ html{
 
 body{
   height:100%;
-  background-image: url('./images/planbk.jpg');
+  background-image: url('./images/pbkground.jpg');
   background-position: 0px 0px;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
-
   margin-top:0px;
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
     margin-bottom:0px;
 }
 .text-block{
   position: absolute;
   text-align: center;
-  top: 19%;
-  left: 25%;
+  top: 8%;
+  left: 22%;
   right: 20%;
 
 }
 
 .text-font{
   font-family: 'Oxygen', sans-serif;
-  font-size:50px;
+  font-size:20px;
+}
+
+.text-block2{
+
+  position: absolute;
+  text-align:left;
+top:65%;
+left:30%;
+}
+.text-font2{
+
+  font-family: 'Oxygen', sans-serif;
+  font-size:14px;
+
+}
+.text-color{
+  color:#33b6c5;
 }
 
 .top-bar{
   background-color:rgba(0, 0, 0, 0);
+  color:#d7efc7;
+}
+.navbar{
+  color:#f1e2d8 !important;
+}
+.navbar .navbar-brand{
+  color:#f1e2d8 !important;
+}
+
+.navbar .navbar-nav li a{
+  color : #f1e2d8 !important;
+}
+
+.navbar .navbar-nav li a:hover{
+  color : black !important;
+}
+
+.navbar .navbar-nav li.active{
+  color : black !important;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #a76f6f;
 }
