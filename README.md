@@ -1,11 +1,13 @@
-This project is a sample starter app with
+This project is a simple notes taking and planning app
 <ul>
 
 <li> Home page with background image.</li>
 <li>Login page with login call to Amazon cognito identity (active directory on aws) using amazon-cognito-identity-js</li>
 <li>Logout page with session management.</li>
 <li>404 page, "Sorry Not Found page".</li>
-<li>Navbar(Brand, Logn, Logout, signup, Features, Contactus )</li>
+<li>Navbar(Brand, Login, Logout, signup, White-boards, Plans, Features, Contactus )</li>
+<li>White-boards: create boards : add notes to the board: disabled save button</li>
+<li>plans: create plans : add tasks to the plans: disabled save button</li>
 </ul>
 
 This has react, node, express, react-dom, react-router-dom, react-bootstrap, awslib, babel, webpack.
